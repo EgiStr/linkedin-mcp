@@ -1,0 +1,318 @@
+{
+  "project": "Open Source LinkedIn MCP Server untuk AI Agents",
+  "date": "2026-07-13",
+  "confidence": 0.88,
+  "sources": [
+    {
+      "id": 1,
+      "type": "repository",
+      "title": "stickerdaniel/linkedin-mcp-server",
+      "url": "https://github.com/stickerdaniel/linkedin-mcp-server",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["internet-researcher", "market-researcher", "social-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 2,
+      "type": "repository",
+      "title": "quinnjr/linkedin-mcp (@pegasusheavy/linkedin-mcp)",
+      "url": "https://github.com/quinnjr/linkedin-mcp",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["internet-researcher", "market-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 3,
+      "type": "repository",
+      "title": "felipfr/linkedin-mcpserver",
+      "url": "https://github.com/felipfr/linkedin-mcpserver",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["internet-researcher", "market-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 4,
+      "type": "repository",
+      "title": "fredericbarthelet/linkedin-mcp-server",
+      "url": "https://github.com/fredericbarthelet/linkedin-mcp-server",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["internet-researcher", "market-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 5,
+      "type": "repository",
+      "title": "FilippTrigub/linkedin-mcp",
+      "url": "https://github.com/FilippTrigub/linkedin-mcp",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["internet-researcher", "market-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 6,
+      "type": "repository",
+      "title": "Dishant27/linkedin-mcp-server",
+      "url": "https://github.com/Dishant27/linkedin-mcp-server",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["internet-researcher", "market-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 7,
+      "type": "repository",
+      "title": "adhikasp/mcp-linkedin",
+      "url": "https://github.com/adhikasp/mcp-linkedin",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["internet-researcher", "market-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 8,
+      "type": "repository",
+      "title": "eliasbiondo/linkedin-mcp-server",
+      "url": "https://github.com/eliasbiondo/linkedin-mcp-server",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["market-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 9,
+      "type": "documentation",
+      "title": "LinkedIn Community Management API Overview",
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/community-management/community-management-overview",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["internet-researcher", "domain-expert"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 10,
+      "type": "documentation",
+      "title": "LinkedIn Content API Migration Guide",
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/community-management/contentapi-migration-guide",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["domain-expert", "internet-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 11,
+      "type": "documentation",
+      "title": "LinkedIn Images API",
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/community-management/shares/images-api",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["domain-expert"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 12,
+      "type": "documentation",
+      "title": "LinkedIn Sign In with LinkedIn (OpenID Connect)",
+      "url": "https://learn.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/sign-in-with-linkedin-v2",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["domain-expert"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 13,
+      "type": "documentation",
+      "title": "LinkedIn Programmatic Refresh Tokens",
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/programmatic-refresh-tokens",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["domain-expert"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 14,
+      "type": "documentation",
+      "title": "LinkedIn Marketing API Recent Changes & Changelog",
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/recent-changes",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["news-researcher", "domain-expert"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 15,
+      "type": "documentation",
+      "title": "LinkedIn Marketing API Tiers (Development vs Standard)",
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["news-researcher", "domain-expert"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 16,
+      "type": "documentation",
+      "title": "LinkedIn Getting Access to APIs",
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["domain-expert", "news-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 17,
+      "type": "paper",
+      "title": "A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, and ANP",
+      "authors": "Abul Ehtesham et al.",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2505.02279",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["academic-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 18,
+      "type": "paper",
+      "title": "MCP Server Architecture Patterns for LLM-Integrated Applications",
+      "authors": "Carson Rodrigues, Oysturn Vas",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2606.30317",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["academic-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 19,
+      "type": "paper",
+      "title": "Bridging Protocol and Production: Design Patterns for Deploying AI Agents with Model Context Protocol",
+      "authors": "Vasundra Srinivasan",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2603.13417",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["academic-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 20,
+      "type": "paper",
+      "title": "MCP-Universe: Benchmarking LLMs with Real-World MCP Servers",
+      "authors": "Ziyang Luo et al.",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2508.14704",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["academic-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 21,
+      "type": "paper",
+      "title": "MCP Tool Descriptions Are Smelly!",
+      "authors": "Mohammed Mehedi Hasan et al.",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2602.14878",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["academic-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 22,
+      "type": "paper",
+      "title": "Security Threat Modeling for Emerging AI-Agent Protocols: MCP, A2A, Agora, and ANP",
+      "authors": "Zeynab Anbiaee et al.",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2602.11327",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["academic-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 23,
+      "type": "paper",
+      "title": "ETDI: Mitigating Tool Squatting in MCP using OAuth-Enhanced Tool Definitions",
+      "authors": "Manish Bhatt et al.",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2506.01333",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["academic-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 24,
+      "type": "specification",
+      "title": "Model Context Protocol Specification (2026-07-28)",
+      "url": "https://modelcontextprotocol.io/specification",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["news-researcher", "academic-researcher"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 25,
+      "type": "specification",
+      "title": "MCP OAuth Authorization Specification (Draft)",
+      "url": "https://github.com/modelcontextprotocol/specification/blob/main/docs/specification/draft/auth.md",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["domain-expert", "internet-researcher"],
+      "reliability_tier": "medium"
+    },
+    {
+      "id": 26,
+      "type": "rfc",
+      "title": "RFC 7636: Proof Key for Code Exchange (PKCE)",
+      "url": "https://datatracker.ietf.org/doc/html/rfc7636",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["domain-expert"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 27,
+      "type": "rfc",
+      "title": "RFC 8628: OAuth 2.0 Device Authorization Grant",
+      "url": "https://datatracker.ietf.org/doc/html/rfc8628",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["domain-expert"],
+      "reliability_tier": "high"
+    },
+    {
+      "id": 28,
+      "type": "community",
+      "title": "Reddit r/mcp: LinkedIn MCP Server Discussion",
+      "url": "https://www.reddit.com/r/mcp/comments/1jykmgj/i_built_a_linkedin_mcp_server_for_claude_that/",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["social-researcher"],
+      "reliability_tier": "medium"
+    },
+    {
+      "id": 29,
+      "type": "community",
+      "title": "Hacker News: LinkedIn Blocking Automated Access",
+      "url": "https://news.ycombinator.com/item?id=48419523",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["social-researcher"],
+      "reliability_tier": "medium"
+    },
+    {
+      "id": 30,
+      "type": "community",
+      "title": "Hacker News: WebMCP & Walled Gardens Discussion",
+      "url": "https://news.ycombinator.com/item?id=47037501",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["social-researcher"],
+      "reliability_tier": "medium"
+    },
+    {
+      "id": 31,
+      "type": "social",
+      "title": "LinkedIn: Pegasus Heavy Industries MCP Announcement",
+      "url": "https://www.linkedin.com/posts/quinnjosephr_opensource-typescript-ai-activity-7412930189854396416-fAcY",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["social-researcher"],
+      "reliability_tier": "medium"
+    },
+    {
+      "id": 32,
+      "type": "directory",
+      "title": "PulseMCP: LinkedIn MCP Servers Directory",
+      "url": "https://www.pulsemcp.com/",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["market-researcher"],
+      "reliability_tier": "medium"
+    },
+    {
+      "id": 33,
+      "type": "prototype",
+      "title": "linkedin-mcp-server (local prototype)",
+      "url": "file:///D:/programming/webdev/eggisatria/linkedin-mcp-server",
+      "accessed_date": "2026-07-13",
+      "subagents_citing": ["internet-researcher", "domain-expert"],
+      "reliability_tier": "high"
+    }
+  ]
+}
