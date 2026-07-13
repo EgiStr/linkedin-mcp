@@ -9,16 +9,17 @@
   },
   "author": {
     "name": "Eggi Satria",
-    "url": "https://github.com/eggisatriadev"
+    "email": "egisatriadev@gmail.com",
+    "url": "https://github.com/EgiStr"
   },
   "license": "MIT",
-  "homepage": "https://github.com/eggisatriadev/linkedin-mcp-server#readme",
+  "homepage": "https://github.com/EgiStr/linkedin-mcp#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggisatriadev/linkedin-mcp-server.git"
+    "url": "git+https://github.com/EgiStr/linkedin-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/eggisatriadev/linkedin-mcp-server/issues"
+    "url": "https://github.com/EgiStr/linkedin-mcp/issues"
   },
   "keywords": [
     "linkedin",
