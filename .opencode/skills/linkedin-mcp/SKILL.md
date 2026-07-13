@@ -11,7 +11,7 @@ Use this skill when the user wants to interact with LinkedIn, post content, view
 LinkedIn MCP Server is an open-source MCP (Model Context Protocol) server that connects AI agents to LinkedIn through the official LinkedIn REST API. It provides tools for profiles, posts (with image upload), feed, and OAuth PKCE authentication.
 
 **GitHub:** https://github.com/EgiStr/linkedin-mcp
-**npm:** `@EgiStr/linkedin-mcp`
+**npm:** `@egistr/linkedin-mcp`
 
 ## Prerequisites
 

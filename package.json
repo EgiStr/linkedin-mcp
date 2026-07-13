@@ -1,5 +1,5 @@
 {
-  "name": "@eggisatriadev/linkedin-mcp",
+  "name": "@egistr/linkedin-mcp",
   "version": "1.0.0",
   "description": "Open-source LinkedIn MCP server for AI agents (Claude Code, OpenCode, Cursor). TypeScript, official LinkedIn API, OAuth PKCE, image upload.",
   "type": "module",

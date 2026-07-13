@@ -1,6 +1,6 @@
 # LinkedIn MCP Server
 
-[![npm version](https://img.shields.io/npm/v/@eggisatriadev/linkedin-mcp)](https://www.npmjs.com/package/@eggisatriadev/linkedin-mcp)
+[![npm version](https://img.shields.io/npm/v/@egistr/linkedin-mcp)](https://www.npmjs.com/package/@egistr/linkedin-mcp)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![CI](https://github.com/EgiStr/linkedin-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/EgiStr/linkedin-mcp/actions/workflows/ci.yml)
 [![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](package.json)

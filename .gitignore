@@ -22,3 +22,6 @@ oauth-tokens.json
 # Temp files
 tmp/
 temp/
+
+# npm token
+.npmrc
