@@ -379,15 +379,20 @@ export class LinkedInClient {
       };
     } catch {
       // Fallback to /rest/posts endpoint
+      // LinkedIn Rest.li requires `q=author` to identify the query type
       try {
         const response = await this.api.get<{
           elements?: LinkedInPost[];
           paging?: { total?: number };
         }>(
-          `${API_REST}/posts?author=${encodeURIComponent(
-            `urn:li:person:${memberId}`
-          )}`,
+          `${API_REST}/posts`,
           {
+            params: {
+              q: "author",
+              author: `urn:li:person:${memberId}`,
+              start: params.start || 0,
+              count,
+            },
             headers: {
               "LinkedIn-Version": LINKEDIN_API_VERSION,
               "X-Restli-Protocol-Version": "2.0.0",
@@ -571,17 +576,49 @@ export class LinkedInClient {
    * This is a destructive operation — there is no undo.
    */
   async deletePost(postId: string): Promise<void> {
-    // Normalize: if it's a full URN, extract just the ID
-    const id = postId
-      .replace("urn:li:share:", "")
-      .replace("urn:li:post:", "")
-      .replace("urn:li:activity:", "")
-      .replace(/^.*[:\/]/, ""); // Strip any remaining URN prefix
+    // Normalize to a full URN (keep prefix for the API calls)
+    const urn = postId.startsWith("urn:li:")
+      ? postId
+      : `urn:li:share:${postId}`;
+    const encodedUrn = encodeURIComponent(urn);
 
-    await this.api.delete(`${API_REST}/posts/${encodeURIComponent(id)}`, {
+    // Strategy 1: DELETE /rest/posts/{encodedUrn} (official LinkedIn REST API)
+    // Per MS Learn docs: requires X-RestLi-Method: DELETE header
+    try {
+      await this.api.delete(`${API_REST}/posts/${encodedUrn}`, {
+        headers: {
+          "LinkedIn-Version": LINKEDIN_API_VERSION,
+          "X-Restli-Protocol-Version": "2.0.0",
+          "X-RestLi-Method": "DELETE",
+        },
+      });
+      return;
+    } catch {
+      // fall through
+    }
+
+    // Strategy 2: Legacy v2 shares — POST /v2/shares/{shareId}?action=delete
+    // Only applicable for share-type URNs
+    if (urn.startsWith("urn:li:share:")) {
+      const shareId = urn.replace("urn:li:share:", "");
+      try {
+        await this.api.post(
+          `${API_V2}/shares/${shareId}?action=delete`,
+          {},
+          {
+            headers: { "X-Restli-Protocol-Version": "2.0.0" },
+          }
+        );
+        return;
+      } catch {
+        // fall through
+      }
+    }
+
+    // Strategy 3: Entity endpoint — DELETE /rest/entities/{encodedUrn}
+    await this.api.delete(`${API_REST}/entities/${encodedUrn}`, {
       headers: {
         "LinkedIn-Version": LINKEDIN_API_VERSION,
-        "X-Restli-Protocol-Version": "2.0.0",
       },
     });
   }
