@@ -2,3 +2,23 @@ node_modules/
 dist/
 .env
 *.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test coverage
+coverage/
+
+# OAuth config (local)
+oauth-tokens.json
+
+# Temp files
+tmp/
+temp/
